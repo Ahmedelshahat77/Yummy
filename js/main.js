@@ -44,6 +44,7 @@ $('.searchBtn').click(function () {
   $('#homeMeals').empty();
   $('#categories').empty();
   $('#mealDetails').empty();
+  $('#form').empty();
   $('.navbar-menu').animate({ left: -navbarWidth }, 500);
   $('.navbar').animate({ left: 0 }, 500);
   $('.baricon i').removeClass('fa-xmark');
@@ -58,6 +59,7 @@ $('.logoHome').click(function () {
   $('#showMealsByName').empty();
   $('#categories').empty();
   $('#mealDetails').empty();
+  $('#form').empty();
   $('.navbar-menu').animate({ left: -navbarWidth }, 500);
   $('.navbar').animate({ left: 0 }, 500);
   $('.baricon i').removeClass('fa-xmark');
@@ -76,6 +78,7 @@ $('.categoryBtn').click(function () {
   $('#homeMeals').empty();
   $('#showMealsByName').empty();
   $('#mealDetails').empty();
+  $('#form').empty();
   // $('#categories').css('display', 'flex');
   getCategories();
 });
@@ -88,6 +91,7 @@ $('.areaBtn').click(function () {
   $('.showSearch').css('display', 'none');
   $('#categories').empty();
   $('#homeMeals').empty();
+  $('#form').empty();
   $('#showMealsByName').empty();
   $('#mealDetails').empty();
   getArea();
@@ -103,6 +107,7 @@ $('.ingrBtn').click(function () {
   $('#homeMeals').empty();
   $('#showMealsByName').empty();
   $('#mealDetails').empty();
+  $('#form').empty();
   $('#ingredientMeals').empty();
   getIngredients();
 });
@@ -188,6 +193,7 @@ async function getMealDetails(mealID) {
   $('#ingredients').empty();
   $('#ingredientMeals').empty();
   $('#areaMeals').empty();
+  $('#form').empty();
   $('.showSearch').css('display', 'none');
 }
 
@@ -349,6 +355,7 @@ async function showMealsByCategory(categoryName) {
   $('#categories').empty();
   $('#ingredients').empty();
   $('#ingredientMeals').empty();
+  $('#form').empty();
   $('.showSearch').css('display', 'none');
 }
 
@@ -409,6 +416,7 @@ async function showMealsByArea(areaName) {
   $('#area').empty();
   $('#ingredients').empty();
   $('#ingredientMeals').empty();
+  $('#form').empty();
   $('.showSearch').css('display', 'none');
 }
 
@@ -468,6 +476,7 @@ async function showMealsByIngredient(ingredientName) {
   $('#categories').empty();
   $('#area').empty();
   $('#ingredients').empty();
+  $('#form').empty();
   $('.showSearch').css('display', 'none');
 }
 
