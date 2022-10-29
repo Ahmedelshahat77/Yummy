@@ -108,6 +108,8 @@ $('.ingrBtn').click(function () {
   $('#showMealsByName').empty();
   $('#mealDetails').empty();
   $('#form').empty();
+  $('#area').empty();
+  $('#areaMeals').empty();
   $('#ingredientMeals').empty();
   getIngredients();
 });
@@ -124,6 +126,9 @@ $('.formBtn').click(function () {
   $('#showMealsByName').empty();
   $('#mealDetails').empty();
   $('#ingredientMeals').empty();
+  $('#ingredients').empty();
+  $('#area').empty();
+  $('#areaMeals').empty();
   form();
 });
 
