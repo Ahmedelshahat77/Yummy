@@ -79,6 +79,8 @@ $('.categoryBtn').click(function () {
   $('#showMealsByName').empty();
   $('#mealDetails').empty();
   $('#form').empty();
+  $('#areaMeals').empty();
+  $('#area').empty();
   // $('#categories').css('display', 'flex');
   getCategories();
 });
