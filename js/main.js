@@ -198,6 +198,7 @@ async function getMealDetails(mealID) {
   $('#ingredients').empty();
   $('#ingredientMeals').empty();
   $('#areaMeals').empty();
+  $('#area').empty();
   $('#form').empty();
   $('.showSearch').css('display', 'none');
 }
