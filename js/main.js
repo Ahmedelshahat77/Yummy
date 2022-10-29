@@ -1,5 +1,10 @@
 // jquery
 //sidebar menu
+$(document).ready(function () {
+  $('#loading').fadeOut(2000, function () {
+    $('body').css('overflow', 'visible');
+  });
+});
 $('.baricon i').click(function () {
   let navbarWidth = $('.navbar-menu').outerWidth();
   if ($('.navbar-menu').css('left') == '0px') {
