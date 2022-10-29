@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <div class="navbarmain">
+      <div class="navbar bg-light flex-column">
+        <div class="logo">
+          <img class="w-100 logoHome" src="img/logo.png" alt="" />
+        </div>
+        <div class="baricon"><i class="fa-solid fa-bars fa-2x"></i></div>
+        <div class="shareicon d-flex flex-column">
+          <i class="fas fa-globe fa-2x"></i>
+          <i class="fas fa-share-alt fa-2x"></i>
+        </div>
+      </div>
+      <div class="navbar-menu bg-dark">
+        <ul class="list-unstyled">
+          <li><a class="searchBtn" href="#">Search</a></li>
+          <li><a href="#" class="categoryBtn">Categories</a></li>
+          <li><a href="#" class="areaBtn">Area</a></li>
+          <li><a href="#" class="ingrBtn">Ingredients</a></li>
+          <li><a href="#" class="formBtn">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section id="search">
+      <div class="container w-75 search-bar mmm position-fixed">
+        <div class="row showSearch">
+          <div class="col-md-6">
+            <input
+              id="searchInput"
+              class="form-control mb-2"
+              placeholder="Search By Name"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              id="letter"
+              class="form-control mb-2"
+              placeholder="Search By First Letter"
+              maxlength="1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="meals w-75 text-center my-1 py-2 mt-5 position-relative container"
+    >
+      <div class="row g-4" id="homeMeals"></div>
+      <div class="row g-4" id="showMealsByName"></div>
+      <div class="row g-4" id="categories"></div>
+      <div class="row g-4" id="categoriesMeal"></div>
+      <div class="row text-white" id="mealDetails"></div>
+      <div class="row text-white" id="area"></div>
+      <div class="row g-4" id="areaMeals"></div>
+      <div class="row g-4" id="ingredients"></div>
+      <div class="row g-4" id="ingredientMeals"></div>
+      <div class="row g-4" id="form"></div>
+    </section>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
